@@ -4,6 +4,10 @@ SkyCache is an async Python weather CLI that fetches weather for multiple cities
 
 It is designed to be simple to run without credentials. If `OPENWEATHER_API_KEY` is not set, SkyCache uses mock weather data so the CLI and cache behavior still work during demos.
 
+## Demo
+
+![SkyCache terminal demo](assets/skycachedemo.png)
+
 ## Features
 
 - Concurrent city lookups with `asyncio.gather`
@@ -16,6 +20,8 @@ It is designed to be simple to run without credentials. If `OPENWEATHER_API_KEY`
 
 ```text
 .
+|-- assets/
+|   `-- skycachedemo.png # README demo screenshot
 |-- main.py              # CLI entrypoint
 |-- src/
 |   |-- api.py           # Async OpenWeather/mock weather fetcher
@@ -101,8 +107,3 @@ Run the test suite with:
 .venv/bin/python3 -m unittest discover
 ```
 
-## GitHub Showcase Tips
-
-- Add a terminal screenshot or GIF showing a cache miss followed by a cache hit.
-- Use the repo description: `Async Python weather CLI with SQLite caching`.
-- Add topics: `python`, `asyncio`, `sqlite`, `cli`, `aiohttp`, `weather-api`, `caching`.
